@@ -13,12 +13,10 @@ namespace Snake
             int x = 1;
             Func1(x);
             Console.WriteLine("Call Func1. x = " + x);
-
-            x = 1;
+            
             Func2(x);
             Console.WriteLine("Call Func.2. x = " + x);
 
-            x = 1;
             Func3(x);
             Console.WriteLine("Call Func.3/ x =" + x);
 
@@ -40,9 +38,12 @@ namespace Snake
 
         }
 
-        public static void Func1(int value)
+        public static void Func1 (int  value)
+        {
 
-        public static void Func2(int value)
+        }
+
+        public static void Func2 (int value)
         {
             value = value + 1;
         }
@@ -52,20 +53,19 @@ namespace Snake
             x = x + 1;
         }
 
-        public static void Move(Point p; int dx, int dy)
+        public static void Move (Point p, int dx, int dy)
         {
             p.x = p.x + dx;
             p.y = p.y + dy;
         }
 
-        public static void Main()
+        public static void Update (Point p)
         {
-        p = new Point();
-        }
 
+        }
         }
   
         
 }
-    }
+   
 
